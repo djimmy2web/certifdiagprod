@@ -1,0 +1,12 @@
+{
+  "crons": [
+    {
+      "path": "/api/admin/rankings/auto-process",
+      "schedule": "0 0 * * 1"
+    },
+    {
+      "path": "/api/cron/regenerate-lives",
+      "schedule": "0 * * * *"
+    }
+  ]
+}
