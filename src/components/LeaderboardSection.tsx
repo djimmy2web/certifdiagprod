@@ -120,7 +120,7 @@ export const LeaderboardSection: React.FC<LeaderboardSectionProps> = ({
 
   return (
     <div className="flex gap-12 w-full relative translate-y-[-1rem] animate-fade-in opacity-0">
-      <div className="flex flex-col w-[600px] items-center justify-center gap-8 relative">
+      <div className="flex flex-col w-full items-center  gap-8 relative">
         <header className="flex flex-col items-start gap-2 relative self-stretch w-full flex-[0_0_auto]">
           <div className="flex items-center justify-center gap-6 relative self-stretch w-full flex-[0_0_auto]">
             {divisionBadges.map((badge, index) => (

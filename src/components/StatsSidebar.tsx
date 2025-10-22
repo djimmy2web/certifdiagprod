@@ -232,7 +232,7 @@ const StatsSidebar: React.FC<StatsSidebarProps> = ({
             </Button>
           </div>
 
-          <div className="flex flex-col items-start gap-[18px] relative self-stretch w-full flex-[0_0_auto]">
+          <div className="flex flex-col items-start gap-[18px] relative self-stretch w-full flex">
             {dailyQuests.map((quest) => {
               const progressWidth = quest.progress > 0 ? `w-[${Math.round((quest.progress / quest.total) * 167)}px]` : "w-0";
               return (
@@ -246,8 +246,8 @@ const StatsSidebar: React.FC<StatsSidebarProps> = ({
                     src="/quizz/XP.svg"
                   />
 
-                  <div className="flex flex-col items-start gap-2 relative flex-1 grow">
-                    <div className="relative w-fit mt-[-1.00px] font-m-bold font-[number:var(--m-bold-font-weight)] text-[#202225] text-[length:var(--m-bold-font-size)] tracking-[var(--m-bold-letter-spacing)] leading-[var(--m-bold-line-height)] whitespace-nowrap [font-style:var(--m-bold-font-style)]">
+                  <div className="flex flex-col items-start gap-2 relative flex-1">
+                    <div className="relative w-full mt-[-1.00px] font-m-bold font-[number:var(--m-bold-font-weight)] text-[#202225] text-[length:var(--m-bold-font-size)] tracking-[var(--m-bold-letter-spacing)] leading-[var(--m-bold-line-height)] [font-style:var(--m-bold-font-style)] break-words">
                       {quest.title}
                     </div>
 

@@ -183,7 +183,7 @@ export default function LiguesPage() {
       `}</style>
       
       {/* Contenu principal */}
-      <div className="px-[246px] py-8">
+      <div className=" flex flex-col items-center justify-start gap-8 py-12 px-6 w-full max-w-7xl mx-auto">
         <LeaderboardSection
           currentDivision={currentDivision}
           leaderboardData={leaderboardData}
